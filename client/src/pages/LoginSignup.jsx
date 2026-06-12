@@ -53,8 +53,8 @@ const LoginSignup = ({ setActiveTab }) => {
 
     setStatusMessage({
       type: 'success',
-      text: isLogin 
-        ? 'Sign in successful! Redirecting you to the home portal...' 
+      text: isLogin
+        ? 'Sign in successful! Redirecting you to the home portal...'
         : 'Account created successfully! Auto-logging you in...'
     });
 
@@ -105,8 +105,8 @@ const LoginSignup = ({ setActiveTab }) => {
 
       <div className="auth-card-wrapper" style={{ position: 'relative', zIndex: 10 }}>
         {/* Back Link */}
-        <button 
-          onClick={() => setActiveTab('home')} 
+        <button
+          onClick={() => setActiveTab('home')}
           style={{
             position: 'absolute',
             top: '25px',
@@ -140,8 +140,8 @@ const LoginSignup = ({ setActiveTab }) => {
             <span>{isLogin ? 'Back' : 'EstateHub'}</span>
           </h2>
           <p className="auth-desc">
-            {isLogin 
-              ? 'Enter your advisor credentials to manage listing sheets.' 
+            {isLogin
+              ? 'Enter your advisor credentials to manage listing sheets.'
               : 'Create an account to save premium property searches.'}
           </p>
         </div>
@@ -234,9 +234,9 @@ const LoginSignup = ({ setActiveTab }) => {
           )}
 
           {/* Submit button */}
-          <button 
-            type="submit" 
-            className="btn btn-gold" 
+          <button
+            type="submit"
+            className="btn btn-gold"
             style={{ width: '100%', padding: '1rem', marginTop: '1rem' }}
             disabled={!!statusMessage}
           >
@@ -247,7 +247,7 @@ const LoginSignup = ({ setActiveTab }) => {
         {/* Toggle Option */}
         <p className="auth-toggle-tip">
           {isLogin ? "Don't have an advisor account?" : 'Already have an account?'}
-          <button 
+          <button
             className="auth-toggle-link"
             onClick={handleToggleMode}
           >
